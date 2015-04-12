@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    </head>
+
+    <body onload="initialize()">
+
+ <nav>
+    <div class="nav-wrapper white grey-text">
+      <a href="#!" class="brand-logo"><img src="img/crimehere-logo.png" alt="crimehere-Logo"/></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      <ul class="nav-top right hide-on-med-and-down">
+        <li><a href="user.html">Login/Signup</a></li>
+        <li><a href="alert.html">Create Alert</a></li>
+        <li><a href="mobile.html">Mobile App</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="user.html">Login/Signup</a></li>
+        <li><a href="alert.html">Create Alert</a></li>
+        <li><a href="mobile.html">Mobile App</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="map-canvas"></div>
+  <div id="draggable" class="ui-widget-content white z-depth-1">
+       <div class="row">
+    <form class="col s12" action="http://5.101.104.178/home/search/" method="POST" id="overlay-search" name="overlay-search">
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Placeholder" id="search" type="text" name="query" class="validate">
+          <label for="first_name">Search</label>
+        </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <button class="btn waves-effect" type="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  </div>
+        
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?v=3"></script>
+      <script type="text/javascript" src="js/markerclusterer.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+      </script>
+      <script type="text/javascript" src="js/crimehere.dev.js"></script>
+      <script>
+        $( document ).ready(function(){
+          $(".button-collapse").sideNav();
+          $( "#draggable" ).draggable();
+        })
+      </script>
+    </body>
+  </html>
+        

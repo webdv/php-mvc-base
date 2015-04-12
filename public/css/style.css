@@ -1,0 +1,38 @@
+nav{
+	height: 100px;
+}
+nav .brand-logo {
+	left: 25px;
+	top:20px;
+}
+.nav-top{
+	top:15px;
+	position: relative;
+	right: 20px;
+}
+nav ul a {
+	color:#999 !important;
+}
+nav ul a:hover, nav ul a:active {
+	color:#33BFC4 !important;
+}
+nav ul li:hover, nav ul li.active {
+    background-color: rgba(126, 202, 201, 0.11);	
+}
+#map-canvas{
+	height: 100vh;
+}
+#draggable { 
+	width: 250px; 
+	height: 450px; 
+	padding: 0.5em;
+	position:absolute;
+	top:120px;
+	right:20px;
+	opacity: 0.9;
+	cursor:grabbing; 
+}
+.ui-widget-content{
+
+}
+
